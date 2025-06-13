@@ -13,7 +13,7 @@ const Home = () => {
                 <p className="text-sm text-gray-500 mb-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <button className="w-full bg-[#6C25FF] text-white font-medium py-3 rounded-md mb-3 cursor-pointer" onClick={()=>{navigate('/singup')}}>
+                <button className="w-full bg-[#6C25FF] text-white font-medium py-3 rounded-md mb-3 cursor-pointer" onClick={()=>{navigate('/signup')}}>
                     Create Account
                 </button>
                 <button className="w-full bg-[#EDE5FF] text-[#6C25FF] font-semibold py-3 rounded-md cursor-pointer" onClick={()=>{navigate('/login')}}>
