@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const navigate = useNavigate();
 
   const isFormValid = email.trim() !== '' && password.trim() !== '';
 
   return (
     <div className="h-screen w-screen bg-[#F7F8F9] flex items-center justify-center">
-      <div className="bg-[#F7F8F9] h-[796px] w-[368px] shadow-sm border border-gray-200 px-6 py-8 flex flex-col justify-between">
+      <div className="bg-[#F7F8F9] h-[796px] w-[368px] shadow-sm border border-gray-200 px-6 py-8">
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2 leading-tight">
             Signin to your <br /> PopX account
@@ -57,7 +59,8 @@ const Login = () => {
         <button
           type="submit"
           disabled={!isFormValid}
-          className={`w-full py-3 mt-6 rounded-md font-semibold transition-all duration-200 ${
+          onClick={()=>{navigate('/profile')}}
+          className={`w-full py-3 mt-4 rounded-md font-semibold transition-all duration-200 ${
             isFormValid
               ? 'bg-[#6C25FF] text-white cursor-pointer'
               : 'bg-[#CBCBCB] text-white cursor-not-allowed'
