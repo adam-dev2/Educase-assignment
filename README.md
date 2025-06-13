@@ -1,12 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📘 Educase UI Assignment
 
-Currently, two official plugins are available:
+This project is a front-end assignment for the Educase company, built to replicate a provided Adobe XD design. It includes three main pages: **Home**, **Signup/Login**, and **Profile**, all styled with **Tailwind CSS** and implemented using **React.js**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### ⚙️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React.js**
+* **Tailwind CSS**
+* **React Router DOM**
+
+---
+
+### 🧠 Features
+
+* Pixel perfect layout based on XD design
+* Signup & Login UI (UI only)
+* Profile page
+* Navigation handled by `react-router-dom`
+
+---
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/adam-dev2/Educase-assignment.git
+cd Educase-assignment
+npm install
+npm run dev
+```
+
+---
+
+### 📁 Folder Structure (basic)
+
+```
+src/
+├── components/          # Home, Login, Signup, Profile
+├── App.jsx         # Main routing component
+└── main.jsx        # Entry point
+```
+
+---
+
+### 🌐 Deployment
+
+You can deploy this project on [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) with zero backend configuration. Just ensure you add a `vercel.json` for router handling (see previous message).
+
+---
+
+### ✍️ Author
+
+* **Name:** Adam (GitHub: [@adam-dev2](https://github.com/adam-dev2))
+
